@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import data from '../data-mobile';
+import data from '../data-desktop';
 
-const Creations = () => {
+const CreationsDesktop = () => {
   // eslint-disable-next-line
   const [cards, setCards] = useState(data);
   return (
-    <section className='creation-mobile'>
-      <h2>Our creations</h2>
+    <section className='creation-desktop'>
+      <div className='title'>
+        <h2>Our creations</h2>
+        <div className='btn-container'>
+          <button className='btn'>See All</button>
+        </div>
+      </div>
       <section>
         {cards.map(card => {
           const { id, image, title } = card;
@@ -21,11 +26,8 @@ const Creations = () => {
           );
         })}
       </section>
-      <div className='btn-container'>
-        <button className='btn'>See All</button>
-      </div>
     </section>
   );
 };
 
-export default Creations;
+export default CreationsDesktop;

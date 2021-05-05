@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 4,
-    image: '/public/images/desktop/image-grid.jpg',
+    image: '/images/desktop/image-grid.jpg',
     title: 'The Grid'
   },
   {
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 6,
-    image: '/public/images/desktop/image-pocket-borealis.jpg',
+    image: '/images/desktop/image-pocket-borealis.jpg',
     title: 'Pocket Boreals'
   },
   {
